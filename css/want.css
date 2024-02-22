@@ -1,0 +1,718 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-color: transparent;
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+}
+/* navbar Starts */
+.navbar{
+    display: flex;
+    position: sticky;
+    padding-top: 2vh;
+    padding-left: 100vh;
+    width: 40vw;
+}
+.navbar ul{
+    display: flex;
+    padding-top: 2vh;
+    flex-direction: row;
+    gap: 7vw;
+    list-style: none;
+    text-decoration: none; 
+}
+.navbar ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.navbar ul li a{
+    cursor: pointer;
+    font-size: 20px;
+    color: crimson;
+    list-style: none;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    border: none;
+    outline: none;
+    transform: scale(1.1);
+    border-bottom: 3px solid crimson;
+    transition: .2s all ease-out;
+}
+/* navbar ends */
+/* Home starts */
+.rgpg{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 0;
+}
+.me{
+    width: 50vw;
+    padding-top: 30vh;
+    padding-left: 10vh;
+}
+.me a{
+    color: crimson;
+    font-size: 42px;
+    font-weight: 900;
+}
+.me b{
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+}
+.abt{
+    width: 80vw;
+    padding-left: 10vh;
+    font-size: 49px;
+    font-weight: 900;
+}
+.first-text{
+    color: white;
+}
+.sec-text{
+    color: crimson;
+}
+.end{
+    width: 20vw;
+    border: none;
+    outline: none;
+}
+.end a{
+    border: none;
+    outline: none;
+    font-size: 25px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 8px;
+    margin-left: 10vh;
+    justify-content: center;
+    margin-top: 10vh;
+    border-radius: 5px;
+    width: 75%;
+    height: 8vh;
+    background-color: crimson;
+    text-decoration: none;
+    color: white;
+}
+.end a:hover{
+    transform: scale(1.1);
+    transition: all 1.0s ease-in-out;
+    background: transparent;
+    border: 2px solid crimson;
+    color: crimson;
+}
+/* Home ends */
+/* About starts */
+.rg{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+.para a{
+    display: block;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 40vw;
+    height: 6vh;
+    color: crimson;
+    padding-left: 40vh;
+    font-size: 25px;
+    font-weight: 900;
+}
+.circle{
+    width: 30vw;
+    height: 10vh;
+    padding-top: 10vh;
+    color: white;
+    padding-left: 10vh;
+    border-radius: 50%;
+}
+.circle img{
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid crimson;
+    margin-top: 10vh;
+}
+.circle img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .5s ease-out;
+}
+.circle a{
+    padding-left: 9vh;
+    font-size: 30px;
+    color: black;
+}
+.rg h3{
+    display: none;
+}
+.para{
+    width: 65vw;
+    height: 10vh;
+    margin-left: 4vh;
+    text-indent: 18px;
+    text-align: justify;
+    font-size: 22px;
+    margin-left: 62vh;
+    color: black;
+}
+.para p{
+    padding: 10px;
+    text-indent: 18px;
+    text-align: justify;
+}
+.cv{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100vh;
+    padding-top: 65vh;
+}
+.cv a{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    width: 17vw;
+    padding: 7px;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    height: 9vh;
+    background-color: crimson;
+}
+.cv a:hover{
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+    background-color: transparent;
+    border: 2px solid crimson;
+    color: crimson;
+}
+/* About ends */
+/* Skills Start */
+.pg{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1d1c1c;
+}
+.sk{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+    gap: 4vh;
+}
+.pg a{
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 900;
+    padding-top: 12vh;
+    color: crimson;
+}
+.card{
+    cursor: pointer;
+    background-color: #111;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 30vw;
+    height: 60vh;
+}
+.card:hover{
+    transform: scale(1.1);
+    background-color: crimson;
+    color: white;
+    transition: all 1.0s ease-in;
+}
+.card i{
+    color: white;
+    font-size: 8vh;
+    padding: 10px;
+}
+.card a{
+    padding: 5px;
+    text-align: left;
+    color: white;
+}
+.card p{
+    color: white;
+    margin-top: 2vh;
+    letter-spacing: 0;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: justify;
+}
+/* SKills end */
+/* teams start */
+.tea{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+}
+.tea a{
+    display: block;
+    padding-left: 100vh;
+    padding-top: 12vh;
+    font-size: 25px;
+    font-weight: 600;
+    color: crimson;
+}
+.cards-slider {
+    position: relative;
+    overflow: hidden;
+    padding-top: 4vh;
+}
+.cards-container {
+    display: flex;
+    transition: transform 0.5s;
+    padding-left: 5vh;
+    gap: 3rem;
+}
+.cards {
+    cursor: pointer;
+    flex: 0 0 300px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: #1d1c1c;
+    padding: 20px;
+    margin-right: 10px;
+}
+.cards b{
+    display: block;
+    text-align: center;
+    padding-left: 2vh;
+    padding-top: 1vh;
+    color: crimson;
+}
+.cards h3{
+    text-align: center;
+    padding-left: 2vh;
+    padding-top: 2vh;
+    color: white;
+}
+.tag{
+    padding-left: 8vh;
+    padding-top: 5vh;
+}
+.tag i{
+    margin-left: 3.5vh;
+    opacity: 3;
+    z-index: 3;
+    color: crimson;
+}
+.tag i:hover{
+    color: white;
+}
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+.prev-button {
+    left: 30px;
+    color: white;
+}
+.prev-button:hover{
+    color: crimson;
+}
+.next-button {
+    right: 30px;
+    color: white;
+}
+.next-button:hover{
+    color: crimson;
+}
+.cards img{
+    margin-left: 15vh;
+    border-radius: 50%;
+    border: 2px solid crimson;
+}
+/* teams end */
+/* Contact Start */
+.contt{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1d1c1c;
+}
+.heading{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding-top: 12vh;
+}
+.heading a{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: crimson;
+}
+.form{
+    width: 100vw;
+    height: 100vh;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20vh;
+    padding-top: 5vh;
+    margin-left: 46vh;
+    margin-top: 5vh;
+    border-radius: 10px;
+    width: 58vw;
+    height: 70vh;
+    background-color: black;
+}
+.form input{
+    width: 30vw;
+    height: 7vh;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    margin-left: 10vh;
+    border-radius: 5px;
+    margin-bottom: 3vh;
+}
+.form input:focus{
+    background: transparent;
+    border: 2px solid crimson;
+}
+.form textarea{
+    display: block;
+    margin-left: 10vh;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 30vw;
+    color: white;
+    height: 30vh;
+}
+.form textarea:focus{
+    background: transparent;
+    color: white;
+    border: 2px solid crimson;
+}
+.form button{
+    display: block;
+    width: 7vw;
+    height: 7vh;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    margin-top: 2vh;
+    margin-left: 10vh;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    outline: 2px solid crimson;
+    background-color: crimson;
+}
+.form button:hover{
+    outline-offset: 2px;
+}
+footer{
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    background: black;
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 4vh;
+    margin-top: 2vh;
+    gap: 2rem;
+}
+.line a{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+}
+.line b{
+    cursor: pointer;
+}
+.line b:hover{
+    color: crimson;
+}
+.lin{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 10vh;
+    margin-top: 2vh;
+    gap: 2rem;
+}
+.lin a{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+}
+.lin b{
+    cursor: pointer;
+}
+.lin b:hover{
+    color: crimson;
+}
+.ime img{
+    margin-left: 15vh;
+    margin-top: 5vh;
+}
+.cpr{
+    display: flex;
+    margin-top: 15vh;
+    margin-left: 10vh;
+    color: white;
+    align-items: baseline;
+    text-align: end;
+    justify-content: center;
+    font-size: 23px;
+    cursor: pointer;
+}
+.cpr a{
+    padding-left: 2vh;
+}
+.cpr:hover{
+    cursor: pointer;
+    color: crimson;
+}
+.soc{
+    margin-left: 21vh;
+    margin-top: 2vh;
+    color: white;
+    gap: 1rem;
+}
+.soc p{
+    width: 20vw;
+    height: 3vh;
+    margin-top: 2vh;
+    line-height: 20px;
+}
+.soc a{
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12vh;
+    gap: 2rem;
+}
+.link i{
+    cursor: pointer;
+    color: white;
+}
+.link i:hover{
+    cursor: pointer;
+    color: crimson;
+}
+
+
+
+/* ==================media query starts responsivernesss==============
+
+@media(max-width:1280px){
+    body{
+        background: linear-gradient(to left, #2C5364, #203A43, #0F2027) !important;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+@media(max-width:412px){
+    .navbar{
+        display: flex;
+        position: fixed;
+        padding-top: 2vh;
+        padding-left: 10vh;
+        width: 100vw;
+        height: 10vh;
+    }
+    .navbar ul{
+        display: flex;
+        padding-top: 2vh;
+        flex-direction: row;
+        gap: 5vw;
+        list-style: none;
+        text-decoration: none; 
+    }
+    .navbar ul li{
+        list-style: none;
+        text-decoration: none;
+    }
+    .navbar ul li a{
+        cursor: pointer;
+        font-size: 20px;
+        color: crimson;
+        list-style: none;
+        text-decoration: none;
+    }
+    .navbar ul li a:hover{
+        border: none;
+        outline: none;
+        transform: scale(1.1);
+        border-bottom: 3px solid crimson;
+        transition: .2s all ease-out;
+    }
+    .rgpg{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+    }
+    .me{
+        width: 100vw;
+        padding-top: 35vh;
+        margin-left: 0;
+        padding-left: 7vw;
+    }
+    .me a{
+        color: crimson;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .me b{
+        color: white;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .abt{
+        width: 100vw;
+        font-size: 30px;
+        font-weight: 900;
+        padding-left: 7vw;
+    }
+    .first-text{
+        color: white;
+    }
+    .sec-text{
+        margin-left: 5px;
+        color: crimson;
+    }
+    .end{
+        width: 100vw;
+        border: none;
+        outline: none;
+    }
+    .end a{
+        border: none;
+        outline: none;
+        font-size: 25px;
+        cursor: pointer;
+        display: block;
+        padding-left: 4px;
+        margin-top: 5vh;
+        margin-left: 7vw;
+        border-radius: 5px;
+        width: 35vw;
+        height: 5vh;
+        background-color: crimson;
+    }
+    .rg{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+    }
+    .rg h3{
+        padding-left: 11vh;
+        padding-top: 4vh;
+        font-size: 30px;
+        color: crimson;
+    }
+    .circle{
+        display: block;
+        position: absolute;
+        color: white;
+        margin-top: 0;
+        padding-left: 10vh;
+    }
+    .circle img{
+        cursor: pointer;
+        border-radius: 50%;
+        border: 3px solid crimson;
+        margin-top: -6vh;
+    }
+    .circle img:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all .5s ease-out;
+    }
+    
+    .circle a{
+        padding-left: 7vh;
+        font-size: 30px;
+        color: black;
+    }
+    .para{
+        text-indent: 18px;
+        text-align: justify;
+        font-size: 22px;
+        color: black;
+    }
+    .para a{
+        display: none;
+    }
+    .para p{
+        padding: 10px;
+        text-indent: 18px;
+        text-align: justify;
+    }
+    .cv{
+        display: block;
+    }
+    .cv a{
+        display: block;
+        cursor: pointer;
+        text-decoration: none;
+        width: 17vw;
+        padding: 7px;
+        color: white;
+        font-size: 25px;
+        border-radius: 5px;
+        height: 9vh;
+        background-color: crimson;
+    }
+    .cv a:hover{
+        transform: scale(1.1);
+        transition: all .5s ease-in-out;
+        background-color: transparent;
+        border: 2px solid crimson;
+        color: crimson;
+    }
+    .sk{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 5vh;
+            gap: 4vh;
+        }
+} */
