@@ -1,11 +1,11 @@
 import next from "next";
-import { ReactNode } from "react";
-import { AuroraBackground } from "./AuroraBackground";
+import { Children, ReactNode } from "react";
+import Aurora from "./Aurora";
 
 const HomeBar = () => {
   return (
     <div>
-        <AuroraBackground children={undefined} />
+      <Aurora />
     </div>
   );
 };

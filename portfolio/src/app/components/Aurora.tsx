@@ -4,13 +4,11 @@ import React, { ReactNode } from "react";
 import Navbar from "./Navbar";
 
 interface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {
-  children: ReactNode;
   showRadialGradient?: boolean;
 }
 
-export const AuroraBackground = ({
+const Aurora = ({
   className,
-  children,
   showRadialGradient = true,
   ...props
 }: AuroraBackgroundProps) => {
@@ -49,8 +47,9 @@ export const AuroraBackground = ({
             )}
           ></div>
         </div>
-        {children}
       </div>
     </main>
   );
 };
+
+export default Aurora;
