@@ -11,7 +11,7 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav className="fixed w-full p-6 bg-white shadow-xl">
+    <nav className="fixed relative w-full p-6 bg-none">
       <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
         <Link href="/">
           <div className="font-semibold text-2xl cursor-pointer">Harish.</div>
@@ -53,8 +53,8 @@ const Navbar = () => {
         <div
           className={
             menuOpen
-              ? "fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+              ? "fixed z-5 left-0 top-0 w-[65%] sm:hidden h-screen bg-white/10 shadow-sm backdrop-blur-sm p-10 ease-in duration-500"
+              : "fixed  z-5 left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div className="flex w-full items-center justify-end">
@@ -62,7 +62,7 @@ const Navbar = () => {
               <AiOutlineClose size={25} />
             </div>
           </div>
-          <div className="flex-col py-2 justify-center items-center text-black font-regular">
+          <div className="flex-col text-xl py-2 justify-center items-center text-black font-regular">
               <ul className="sm:flex">
                 <Link href="/home">
                   <li 
