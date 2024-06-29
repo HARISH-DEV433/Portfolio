@@ -2,7 +2,7 @@
 const ResponsiveParagraph = () => {
   return (
     <div className="p-4 md:p-8 lg:p-12">
-      <p className="text-center md:text-lg lg:text-xl">
+      <p className="text-base md:text-lg lg:text-xl">
         Hi,I'm Harish.K a final-year B.Tech-IT graduate with commendable leadership skills
         and excellent time management capabilities. My adaptability makes me a
         valuable team player, while my extensive knowledge of programming and
