@@ -12,34 +12,34 @@ const Navbar = () => {
   };
   return (
     <nav className="fixed relative w-full p-6 bg-none">
-      <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
+      <div className="flex justify-between items-center h-full w-full px-2 2xl:px-16">
         <Link href="/">
           <div className="font-semibold text-2xl cursor-pointer">Harish.</div>
         </Link>
         <div className="text-black sm:flex">
           <ul className="font-regular gap-6 hidden sm:flex">
-            <Link href="/home">
-              <li className="text-xl hover:border-b-2 hover:border-blue-600 hover:-translate-y-1 hover:transition hover:ease-in-out hover:delay-150 hover:border-blue-600">
+            <Link href="#home">
+              <li className="text-xl hover:font-bold">
                 Home
               </li>
             </Link>
-            <Link href="/about">
-              <li className="text-xl hover:border-b-2 hover:border-blue-600 hover:-translate-y-1 hover:transition hover:ease-in-out hover:delay-150 hover:border-blue-600">
+            <Link href="#about">
+              <li className="text-xl hover:font-bold">
                 About
               </li>
             </Link>
-            <Link href="/skills">
-              <li className="text-xl hover:border-b-2 hover:border-blue-600 hover:-translate-y-1 hover:transition hover:ease-in-out hover:delay-150 hover:border-blue-600">
+            <Link href="#skills">
+              <li className="text-xl hover:font-bold">
                 Skills
               </li>
             </Link>
-            <Link href="/projects">
-              <li className="text-xl hover:border-b-2 hover:border-blue-600 hover:-translate-y-1 hover:transition hover:ease-in-out hover:delay-150 hover:border-blue-600">
+            <Link href="#projects">
+              <li className="text-xl hover:font-bold">
                 Projects
               </li>
             </Link>
-            <Link href="/connect">
-              <li className="text-xl hover:border-b-2 hover:border-blue-600 hover:-translate-y-1 hover:transition hover:ease-in-out hover:delay-150 hover:border-blue-600">
+            <Link href="#connect">
+              <li className="text-xl hover:font-bold">
                 Connect.
               </li>
             </Link>
@@ -64,38 +64,38 @@ const Navbar = () => {
           </div>
           <div className="flex-col text-xl py-2 justify-center items-center text-black font-regular">
               <ul className="sm:flex">
-                <Link href="/home">
+                <Link href="#home">
                   <li 
                   onClick={() => setMenuOpen(false)}
-                  className="py-4 focus:font-semibold text-xl focus:border-b-2 focus:border-blue-600 focus:-translate-y-1 focus:transition focus:ease-in-out focus:delay-150">
+                  className="py-4 focus:font-semibold text-xl focus:font-bold hover:font-bold">
                     Home
                   </li>
                 </Link>
-                <Link href="/about">
+                <Link href="#about">
                   <li 
                   onClick={() => setMenuOpen(false)}
-                  className="py-4 focus:font-semibold text-xl focus:border-b-2 focus:border-blue-600 focus:-translate-y-1 focus:transition focus:ease-in-out focus:delay-150">
+                  className="py-4 focus:font-semibold text-xl hover:font-bold focus:font-bold">
                     About
                   </li>
                 </Link>
-                <Link href="/skills">
+                <Link href="#skills">
                   <li 
                   onClick={() => setMenuOpen(false)}
-                  className="py-4 focus:font-semibold text-xl focus:border-b-2 focus:border-blue-600 focus:-translate-y-1 focus:transition focus:ease-in-out focus:delay-150">
+                  className="py-4 focus:font-semibold text-xl hover:font-bold focus:font-bold">
                     Skills
                   </li>
                 </Link>
-                <Link href="/projects">
+                <Link href="#projects">
                   <li 
                   onClick={() => setMenuOpen(false)}
-                  className="py-4 focus:font-semibold text-xl focus:border-b-2 focus:border-blue-600 focus:-translate-y-1 focus:transition focus:ease-in-out focus:delay-150">
+                  className="py-4 focus:font-semibold text-xl hover:font-bold focus:font-bold">
                     Projects
                   </li>
                 </Link>
-                <Link href="/connect">
+                <Link href="#connect">
                   <li 
                   onClick={() => setMenuOpen(false)}
-                  className="py-4 focus:font-semibold text-xl focus:border-b-2 focus:border-blue-600 focus:-translate-y-1 focus:transition focus:ease-in-out focus:delay-150">
+                  className="py-4 focus:font-semibold text-xl hover:font-bold focus:font-bold">
                     Connect.
                   </li>
                 </Link>

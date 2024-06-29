@@ -1,7 +1,9 @@
 "use client";
 import { cn } from "../utils/cn";
 import React, { ReactNode } from "react";
-import Navbar from "./Navbar";
+import Link from "next/link";
+import Type from "./Typewrittereffect";
+import Navbar from "../components/Navbar";
 
 interface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {
   showRadialGradient?: boolean;
@@ -22,7 +24,36 @@ const Aurora = ({
         {...props}
       >
         <div className="absolute inset-0 overflow-hidden">
-        <Navbar />
+          <Navbar />
+          <div className="relative py-28 flex justify-center items-center text-black">
+            <div className="flex flex-col space-y-6 text-black text-4xl">
+              <div className="flex relative text-4xl">
+                Hi there!<p className="text-black font-semibold">I'm Harish.</p>
+              </div>
+              <div className="text-center">
+                <Type />
+              </div>
+              <div className="flex items-center justify-center relative text-center">
+                <Link href="#about">
+                  <span className="inline-block animate-bounce rounded-full p-4 bg-indigo-100 text-white text-sm">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="black"
+                      className="bi bi-arrow-down"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
+                      />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div>
           <div
             //   I'm sorry but this is what peak developer performance looks like // trigger warning
             className={cn(

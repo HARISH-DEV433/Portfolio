@@ -1,11 +1,13 @@
 import next from "next";
 import { Children, ReactNode } from "react";
-import Aurora from "./Aurora";
+import Aurora from "../subcomponents/Aurora";
 
 const HomeBar = () => {
   return (
     <div>
-      <Aurora />
+      <div className="relative h-screen" id="home">
+        <Aurora />
+      </div>
     </div>
   );
 };
