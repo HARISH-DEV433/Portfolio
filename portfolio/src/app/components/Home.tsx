@@ -1,6 +1,6 @@
 import next from "next";
 import { Children, ReactNode } from "react";
-import Aurora from "../subcomponents/Aurora";
+import Aurora from "./Aurora";
 
 const HomeBar = () => {
   return (

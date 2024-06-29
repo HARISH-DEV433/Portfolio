@@ -2,7 +2,7 @@
 import { cn } from "../utils/cn";
 import React, { ReactNode } from "react";
 import Link from "next/link";
-import Type from "./Typewrittereffect";
+import Type from "./subcomponents/Typewrittereffect";
 import Navbar from "../components/Navbar";
 
 interface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {

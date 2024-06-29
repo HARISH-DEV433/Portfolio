@@ -1,5 +1,5 @@
 import next from "next";
-import ResponsiveParagraph from "../subcomponents/Responsiveparagraph";
+import ResponsiveParagraph from "./Responsiveparagraph";
 
 const About = () => {
   return (
