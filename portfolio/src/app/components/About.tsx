@@ -1,5 +1,5 @@
 import next from "next";
-import ResponsiveParagraph from "./Responsiveparagraph";
+import Responsiveparagraph from "./Responsiveparagraph";
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
         About
       </div>
       <div>
-        <ResponsiveParagraph />
+        <Responsiveparagraph />
       </div>
     </div>
   );
