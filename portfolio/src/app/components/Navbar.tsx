@@ -53,7 +53,7 @@ const Navbar = () => {
         <div
           className={
             menuOpen
-              ? "fixed z-5 left-0 top-0 w-[65%] sm:hidden h-screen bg-white/10 shadow-sm backdrop-blur-sm p-10 ease-in duration-500"
+              ? "fixed z-20 left-0 top-0 w-[65%] sm:hidden h-screen bg-white/10 shadow-sm backdrop-blur-lg p-10 ease-in duration-500"
               : "fixed  z-5 left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -67,35 +67,35 @@ const Navbar = () => {
                 <Link href="#home">
                   <li 
                   onClick={() => setMenuOpen(false)}
-                  className="py-4 focus:font-semibold text-xl focus:font-bold hover:font-bold">
+                  className="py-4 focus:font-semibold text-2xl focus:font-bold hover:font-bold">
                     Home
                   </li>
                 </Link>
                 <Link href="#about">
                   <li 
                   onClick={() => setMenuOpen(false)}
-                  className="py-4 focus:font-semibold text-xl hover:font-bold focus:font-bold">
+                  className="py-4 focus:font-semibold text-2xl hover:font-bold focus:font-bold">
                     About
                   </li>
                 </Link>
                 <Link href="#skills">
                   <li 
                   onClick={() => setMenuOpen(false)}
-                  className="py-4 focus:font-semibold text-xl hover:font-bold focus:font-bold">
+                  className="py-4 focus:font-semibold text-2xl hover:font-bold focus:font-bold">
                     Skills
                   </li>
                 </Link>
                 <Link href="#projects">
                   <li 
                   onClick={() => setMenuOpen(false)}
-                  className="py-4 focus:font-semibold text-xl hover:font-bold focus:font-bold">
+                  className="py-4 focus:font-semibold text-2xl hover:font-bold focus:font-bold">
                     Projects
                   </li>
                 </Link>
                 <Link href="#connect">
                   <li 
                   onClick={() => setMenuOpen(false)}
-                  className="py-4 focus:font-semibold text-xl hover:font-bold focus:font-bold">
+                  className="py-4 focus:font-semibold text-2xl hover:font-bold focus:font-bold">
                     Connect.
                   </li>
                 </Link>

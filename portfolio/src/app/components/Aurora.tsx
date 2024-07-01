@@ -24,8 +24,8 @@ const Aurora = ({
         {...props}
       >
         <div className="absolute inset-0 overflow-hidden">
-          <Navbar />
-          <div className="relative py-28 flex justify-center items-center text-black">
+        <Navbar />
+        <div className="relative py-28 flex justify-center items-center text-black">
             <div className="flex flex-col space-y-6 text-black text-4xl">
               <div className="flex relative text-4xl">
                 Hi there!<p className="text-black font-semibold">I'm Harish.</p>
