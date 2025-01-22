@@ -14,32 +14,32 @@ const Navbar = () => {
     <nav className="fixed relative w-full p-6 bg-none">
       <div className="flex justify-between items-center h-full w-full px-2 2xl:px-16">
         <Link href="/">
-          <div className="font-semibold text-2xl cursor-pointer">Harish.</div>
+          <div className="font-semibold text-2xl text-black cursor-pointer">Harish K</div>
         </Link>
         <div className="text-black sm:flex">
           <ul className="font-regular gap-6 hidden sm:flex">
-            <Link href="#home">
-              <li className="text-xl hover:font-bold">
+            <Link href="/Home">
+              <li className="text-xl text-black hover:font-bold hover:text-violet-800">
                 Home
               </li>
             </Link>
-            <Link href="#about">
-              <li className="text-xl hover:font-bold">
-                About
-              </li>
-            </Link>
-            <Link href="#skills">
-              <li className="text-xl hover:font-bold">
+            <Link href="/Skills">
+              <li className="text-xl text-black hover:font-bold hover:text-violet-800">
                 Skills
               </li>
             </Link>
-            <Link href="#projects">
-              <li className="text-xl hover:font-bold">
+            <Link href="/Experience">
+              <li className="text-xl text-black hover:font-bold hover:text-violet-800">
+                Experience
+              </li>
+            </Link>
+            <Link href="/Projects">
+              <li className="text-xl text-black hover:font-bold hover:text-violet-800">
                 Projects
               </li>
             </Link>
-            <Link href="#connect">
-              <li className="text-xl hover:font-bold">
+            <Link href="/Connect">
+              <li className="text-xl text-black hover:font-bold hover:text-violet-800">
                 Connect.
               </li>
             </Link>
@@ -64,35 +64,35 @@ const Navbar = () => {
           </div>
           <div className="flex-col text-xl py-2 justify-center items-center text-black font-regular">
               <ul className="sm:flex">
-                <Link href="#home">
+                <Link href="/Home">
                   <li 
                   onClick={() => setMenuOpen(false)}
                   className="py-4 focus:font-semibold text-2xl focus:font-bold hover:font-bold">
                     Home
                   </li>
                 </Link>
-                <Link href="#about">
-                  <li 
-                  onClick={() => setMenuOpen(false)}
-                  className="py-4 focus:font-semibold text-2xl hover:font-bold focus:font-bold">
-                    About
-                  </li>
-                </Link>
-                <Link href="#skills">
+                <Link href="/Skills">
                   <li 
                   onClick={() => setMenuOpen(false)}
                   className="py-4 focus:font-semibold text-2xl hover:font-bold focus:font-bold">
                     Skills
                   </li>
                 </Link>
-                <Link href="#projects">
+                <Link href="/Experience">
+                  <li 
+                  onClick={() => setMenuOpen(false)}
+                  className="py-4 focus:font-semibold text-2xl hover:font-bold focus:font-bold">
+                    Experience
+                  </li>
+                </Link>
+                <Link href="/Projects">
                   <li 
                   onClick={() => setMenuOpen(false)}
                   className="py-4 focus:font-semibold text-2xl hover:font-bold focus:font-bold">
                     Projects
                   </li>
                 </Link>
-                <Link href="#connect">
+                <Link href="/Connect">
                   <li 
                   onClick={() => setMenuOpen(false)}
                   className="py-4 focus:font-semibold text-2xl hover:font-bold focus:font-bold">

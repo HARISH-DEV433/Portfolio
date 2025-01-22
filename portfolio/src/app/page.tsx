@@ -1,14 +1,10 @@
-import Image from "next/image";
-import HomeBar from "./components/Home";
-import { ReactNode } from "react";
-import About from "./components/About";
+import HomeBar from "./Home/page";
 
 
 export default function Home() {
   return (
     <div>
       <HomeBar/>
-      <About />
     </div>
   );
 }
